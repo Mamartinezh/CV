@@ -1,8 +1,10 @@
 
+import { useState } from 'react'
 import pcImg from './assets/render1.png'
 import serverImg from './assets/render5.png'
 import PieChart from "./components/PieChart"
 import BlinkerText from "./components/BlinkerText"
+import soundSrc from './assets/all-key.mp3'
 import {
 	langs,
 	works,
@@ -16,6 +18,10 @@ import {
 
 
 export default function App() {
+
+	const audio = new Audio(soundSrc)
+	const [ volOn, setVolOn ] = useState(true)
+
 	return (
 		<div className='app'>
 			<div className='experience'>
@@ -79,7 +85,7 @@ export default function App() {
 			<div className='profile'>
 				<div className='profile-anim'>
 					<img src={pcImg} />
-					<BlinkerText samples={samples} />
+					<BlinkerText samples={samples} audio={audio} muted={!volOn} />
 				</div>
 				<div className='profile-contact'>
 					<h2 className='profile-title'>
@@ -123,6 +129,8 @@ export default function App() {
 					</div>
 				</div>
 			</div>
+{/*			<i onClick={e=>setVolOn(true)} className={`fa-solid fa-volume-xmark off ${volOn}`}></i>
+			<i onClick={e=>setVolOn(false)} className={`fa-solid fa-volume-high on ${volOn}`}></i>*/}
 		</div>
 	)
 }

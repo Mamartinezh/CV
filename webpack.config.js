@@ -26,7 +26,12 @@ const ruleForMedia = {
 	use: 'file-loader?name=./images/[name].[ext]'
 }
 
-const rules = [ruleForJS, ruleForCSS, ruleForMedia]
+const ruleForAudio = {
+	test: /\.(mp3)$/,
+	use: 'file-loader?name=./audio/[name].[ext]'
+}
+
+const rules = [ruleForJS, ruleForCSS, ruleForMedia, ruleForAudio]
 
 module.exports = {
 	entry: './src/index.js',
