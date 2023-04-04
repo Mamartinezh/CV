@@ -305,7 +305,8 @@ p {
 	.experience {
 		display: grid;
 	}
-	.experience .experience-work_item.first {
+	.experience .experience-work_item.first div:first-child,
+	.experience .experience-work_item.first div:nth-child(2) {
 		width: 100%;
 	}
 	.experience-languages {
