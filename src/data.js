@@ -128,7 +128,7 @@ const works = [
 			{
 				position: 'Junior Civil Engineer',
 				duration: 'Feb 2013 - Jul 2019',
-				description: 'Lead the thermo-dynamic studies of hydroelectrical projects such as Porvenir II (Colombia), Minas San Francisco (Ecuador), and Embalse Bucaramanga (Colombia); as well as the design of tunnel sections for Pacific I and Pacific III road projects.',
+				description: 'Led the thermo-dynamic studies of hydroelectrical projects such as Porvenir II (Colombia), Minas San Francisco (Ecuador), and Embalse Bucaramanga (Colombia); as well as the design of tunnel sections for Pacific I and Pacific III road projects.',
 				items: [
 					'Development of coding algorithms for optimization of thermal analysis using Python.',
 					'Implementation of advanced finite element software (CODE-ASTER) for thermal analysis.',
@@ -138,7 +138,7 @@ const works = [
 			{
 				position: 'Intermedian Civil Engineer',
 				duration: 'Jul 2019 - Present',
-				description: 'Lead the thermo-dynamic studies of HydroItuango',
+				description: 'Led the thermo-dynamic studies of HydroItuango',
 				items: [
 					'Designs of the concrete massive structures in the hydropower plant.',
 					'Designs of concrete components of the dam.'
