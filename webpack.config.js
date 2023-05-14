@@ -22,7 +22,7 @@ const ruleForCSS = {
 }
 
 const ruleForMedia = {
-	test: /\.(png|svg|webp|jpe?g)$/,
+	test: /\.(png|svg|webp|jpe?g|pdf)$/,
 	use: 'file-loader?name=./images/[name].[ext]'
 }
 

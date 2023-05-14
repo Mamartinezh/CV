@@ -5,7 +5,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Shadows Into Light';
+	font-family: calibri;
 }
 
 :root {
@@ -102,6 +102,12 @@ p {
 	padding: 15px;
 	background: var(--primary-color-dark-600);
 	z-index: 1;
+	position: relative;
+}
+
+.profile-text {
+	padding-right: 75px;
+	margin-bottom: 20px;
 }
 
 .profile-anim {
@@ -159,7 +165,8 @@ p {
 
 .profile-skills_cont,
 .profile-interests_cont {
-	display: grid;
+	display: flex;
+	flex-wrap: wrap;
 	grid-template-columns: max-content max-content;
 	justify-items: center;
 	place-content: center;
@@ -176,6 +183,7 @@ p {
 }
 
 .profile-interests_cont {
+	display: grid;
 	column-gap: 30px;
 	grid-row-gap: 20px;
 }
@@ -186,6 +194,10 @@ p {
 	width: 100%;
 	font-size: 1.1rem;
 	font-weight: 600;
+}
+
+.profile-interest:last-child {
+	grid-column: 1 / span 2;
 }
 
 .profile-interest i {
@@ -200,11 +212,6 @@ p {
 .experience * {
 	position: relative;
 	font-weight: 900;
-}
-
-.experience .experience-work_item.first div:first-child,
-.experience .experience-work_item.first div:nth-child(2)  {
-	width: 85%;
 }
 
 .experience-work_item--head,
@@ -253,7 +260,8 @@ p {
 
 
 .experience-languages {
-	display: grid;
+	display: grid; 
+	position: relative;
 	justify-items: flex-end;
 	padding: 0 40px;
 	margin-top: 20px;
@@ -281,6 +289,18 @@ p {
 	z-index: 0;
 }
 
+.pdf-link {
+	margin-top: 30px;
+	color:  var(--primary-color);
+	display: grid;
+	place-content: center;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.pdf-link i {
+	font-size: 1.5rem;
+}
 
 @media only screen and (max-width: 850px) {
 	.app {

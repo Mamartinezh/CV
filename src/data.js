@@ -9,7 +9,7 @@ const samples = [
 
 const contact = [
 	{
-		label: 'Rionegro, Ant, COL',
+		label: 'Medellín, Ant, COL',
 		link: 'https://www.google.com/maps/place/Rionegro,+Antioquia/@6.1448369,-75.374118,14z/data=!3m1!4b1!4m6!3m5!1s0x8e469f0f10c26bc9:0x76297df352b016c6!8m2!3d6.1490188!4d-75.3789523!16zL20vMDdrNGh0',
 		icon: <i className="fa-solid fa-house-user contact-link-icon"></i>
 	},
@@ -25,14 +25,14 @@ const contact = [
 	},
 	{
 		label: 'Mateo Martinez',
-		link: 'https://www.linkedin.com/in/mateo-martinez-1b59a6138/',
+		link: 'https://www.linkedin.com/in/mateo-martínez-herrera-developer',
 		icon:<i className="fa-brands fa-linkedin contact-link-icon"></i>
 	}
 ]
 
-const profile = 'Civil engineer with 10+ years of experience designing hydroelectrical projects, specifically in the area of thermal analysis for massive concrete structures, such as dams, spillways, intake towers, and other structures. My latest experience was the automation of monitoring and surveillance for the hydroelectrical project HidroItuango, using Python, MySQL, VBA, cloud services, etc.'
+const profile = 'FullStack Web Developer experienced using React, Javascript ES6+, Node.js, HTML, CSS, Three.js, R3F, and Mongoose. I have a developing approach focused on immersive experiences using tools such as Blender, Photoshop, and Three.js. Furthermore, I had worked with Fortran, Python, and VBA Scripting with the Microsoft Office suite. I have a background as a Civil Engineer with 10+ years of specific experience in the field of thermal analysis for massive concrete structures and process automation applied to dam monitoring, working with tools such as Python, MySQL, VBA, Cloud Services, and Civil Engineering software.'
 
-const skills = ['HTML / CSS / JS', 'React', 'Webpack', 'ThreeJS', 'NodeJS', 'Express', 'MongoDB / Mongoose', 'Git', 'Python', 'Kivy', 'Excel / VBA', 'Power Automate', 'Blender']
+const skills = ['HTML / CSS / JS', 'React', 'Webpack', 'Three.js', 'R3F', 'Node.js', 'Express', 'MongoDB / Mongoose', 'Git', 'Python', 'Kivy', 'Excel / VBA', 'Power Automate', 'Blender']
 
 const interests = [
 	{
@@ -40,21 +40,17 @@ const interests = [
 		icon: <i className="fa-solid fa-computer"></i>
 	},
 	{
-		label:'Game Dev.',
-		icon: <i className="fa-solid fa-gamepad"></i>
-	},	
+		label:'Immersive Webs',
+		icon: <i className="fa-solid fa-vr-cardboard"></i>
+	},
 	{
 		label:'3D Modeling',
 		icon: <i className="fa-brands fa-uncharted"></i>
 	},
 	{
-		label:'Inmersive Apps',
-		icon: <i className="fa-solid fa-vr-cardboard"></i>
-	},
-	{
-		label:'Data Science',
-		icon: <i className="fa-solid fa-circle-nodes"></i>
-	},
+		label:'Game Dev.',
+		icon: <i className="fa-solid fa-gamepad"></i>
+	},	
 	{
 		label:'Classic Guitar',
 		icon: <i className="fa-solid fa-guitar"></i>
@@ -116,34 +112,17 @@ const works = [
 		place: 'COL',
 		positions: [
 			{
-				position: 'Auxiliar Engineer',
-				duration: 'Feb 2012 - Feb 2013',
-				description: 'Accountable for the automation of thermal calculations for massive structures using Fortran and modeling software, such as COSMOS, MIDAS GTS/NX and SAP 2000.',
-				items: [
-					'Development of algorithms for calculation optimization using VBA and Fortran',
-					'Modeling of massive concrete structures using 3D software',
-					'Development of coding algorithms for managment of big data resulting from 3D models and calculations'
-				]
-			}, 
-			{
-				position: 'Junior Civil Engineer',
-				duration: 'Feb 2013 - Jul 2019',
-				description: 'Led the thermo-dynamic studies of hydroelectrical projects such as Porvenir II (Colombia), Minas San Francisco (Ecuador), and Embalse Bucaramanga (Colombia); as well as the design of tunnel sections for Pacific I and Pacific III road projects.',
+				position: 'Semi Senior Civil Engineer',
+				duration: 'Feb 2013 - Present',
+				description: 'Accountable for the automation of thermal calculations for massive concrete structures. Shared leadership of a multidisciplinary team for dam monitoring and surveillance automation. Responsible for static and dynamic designs of dams, tunnel lining, and prestressed concrete bridges.',
 				items: [
 					'Development of coding algorithms for optimization of thermal analysis using Python.',
-					'Implementation of advanced finite element software (CODE-ASTER) for thermal analysis.',
-					'Development of new methdologies regarding the approch of thermal designs using machine learning for the optimization of calculations.'
+					'Development of coding algorithms for optimization of structures design using Fortran, Python and VBA Scripting.',
+					'Modeling of massive concrete structures using 3D software, such as COSMOS, Code_Aster, SALOME, AutoCAD, MIDAS GTS/NX.',
+					'Development of coding algorithms for the management of big data resulting from 3D models and calculations.',
+					'Designing massive concrete structures in hydroelectrical projects, such as dam components and hydropower plants.',
 				]
-			}, 
-			{
-				position: 'Intermedian Civil Engineer',
-				duration: 'Jul 2019 - Present',
-				description: 'Led the thermo-dynamic studies of HydroItuango',
-				items: [
-					'Designs of the concrete massive structures in the hydropower plant.',
-					'Designs of concrete components of the dam.'
-				]
-			}			
+			}, 			
 		]
 	},
 	{
@@ -152,8 +131,8 @@ const works = [
 		positions: [
 			{
 				position: 'Resident Engineer',
-				duration: 'Oct 2011 - Feb 2012',
-				description: 'Assist in the construction of sports courts roofs, being accountable of the material reception, as-built blueprints elaboration and managment of construction site workers'
+				duration: 'Oct 2012 - Feb 2013',
+				description: 'Assisted in the construction of sports courts roofs, being accountable for the material reception, as-built blueprints making, and management of construction site workers.'
 			}
 		]
 	}

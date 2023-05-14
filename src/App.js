@@ -4,6 +4,7 @@ import pcImg from './assets/render1.png'
 import serverImg from './assets/render5.png'
 import PieChart from "./components/PieChart"
 import BlinkerText from "./components/BlinkerText"
+import cvPath from './assets/Mateo-Martinez-Herrera-Resume.pdf'
 import soundSrc from './assets/all-key.mp3'
 import {
 	langs,
@@ -26,6 +27,13 @@ export default function App() {
 		<div className='app'>
 			<div className='experience'>
 				<img src={serverImg} />
+				<div className='profile-text'>
+					<h2 className='profile-title'>
+						<i className="fa-solid fa-user"></i>
+						Profile
+					</h2>
+					<p>{profile}</p>
+				</div>
 				<h2 className='experience-title'>
 					<i className="fa-solid fa-briefcase"></i>
 					Working Experience
@@ -85,7 +93,7 @@ export default function App() {
 			<div className='profile'>
 				<div className='profile-anim'>
 					<img src={pcImg} />
-					<BlinkerText samples={samples} audio={audio} muted={!volOn} />
+					<BlinkerText samples={samples} audio={audio} muted={true} />
 				</div>
 				<div className='profile-contact'>
 					<h2 className='profile-title'>
@@ -93,15 +101,15 @@ export default function App() {
 						Contact
 					</h2>
 					{contact.map((data, id)=>
-						<a className='contact-link' target='BLANK' href={data.link}>{data.icon}{data.label}</a>
+						<a 
+							title={data.label} 
+							className='contact-link' 
+							target='BLANK' 
+							href={data.link}
+						>
+							{data.icon}{data.label}
+						</a>
 					)}
-				</div>
-				<div className='profile-text'>
-					<h2 className='profile-title'>
-						<i className="fa-solid fa-user"></i>
-						Profile
-					</h2>
-					<p>{profile}</p>
 				</div>
 				<div className='profile-skills'>
 					<h2 className='profile-title'>
@@ -128,9 +136,11 @@ export default function App() {
 						)}
 					</div>
 				</div>
+				<a className='pdf-link' href={cvPath} download='Mateo-Martinez-Herrera-Resume.pdf'>
+					<i class="fa-solid fa-file-arrow-down"></i>
+					Get Résumé PDF
+				</a>
 			</div>
-{/*			<i onClick={e=>setVolOn(true)} className={`fa-solid fa-volume-xmark off ${volOn}`}></i>
-			<i onClick={e=>setVolOn(false)} className={`fa-solid fa-volume-high on ${volOn}`}></i>*/}
 		</div>
 	)
 }
