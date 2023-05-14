@@ -93,7 +93,7 @@ export default function App() {
 			<div className='profile'>
 				<div className='profile-anim'>
 					<img src={pcImg} />
-					<BlinkerText samples={samples} audio={audio} muted={true} />
+					<BlinkerText samples={samples} audio={null} muted={true} />
 				</div>
 				<div className='profile-contact'>
 					<h2 className='profile-title'>
