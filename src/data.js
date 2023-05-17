@@ -3,8 +3,8 @@
 const samples = [
 	"I'm Mateo Martinez Herrera",
 	"I'm a Web Dev",
-	"I'm a 3D Artist",
-	"I'm a UI/UX designer",
+	"I'm a Creative Dev.",
+	"I'm a FullStack Dev.",
 ]
 
 const contact = [
